@@ -1688,3 +1688,64 @@ body,
     min-width: 650px;
   }
 }
+
+/* =========================================================
+   DASHBOARD TABLE — MOBILE FIX
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+  /* Dashboard table's outer card */
+  .dashboard-table,
+  .recent-sales,
+  .recent-sales-table,
+  .dashboard-table-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* Any table section on the dashboard */
+  .dashboard-table,
+  .recent-sales,
+  .recent-sales-table,
+  .dashboard-table-container,
+  .table-container {
+    overflow-x: auto !important;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Keep the table wide enough to read */
+  .dashboard-table table,
+  .recent-sales table,
+  .recent-sales-table table,
+  .dashboard-table-container table,
+  .table-container table {
+    min-width: 650px !important;
+    width: 650px !important;
+  }
+}
+
+/* Small phones */
+@media (max-width: 430px) {
+
+  .dashboard-table,
+  .recent-sales,
+  .recent-sales-table,
+  .dashboard-table-container,
+  .table-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+  }
+
+  .dashboard-table table,
+  .recent-sales table,
+  .recent-sales-table table,
+  .dashboard-table-container table,
+  .table-container table {
+    min-width: 650px !important;
+    width: 650px !important;
+  }
+}
